@@ -16,8 +16,8 @@ import d2lzh_pytorch as d2l
 import torch.utils.data
 
 #获取数据集
-mnist_train = torchvision.datasets.FashionMNIST(root='~/Datasets/FashionMNIST', train=True, download=True, transform=transforms.ToTensor())
-mnist_test = torchvision.datasets.FashionMNIST(root='~/Datasets/FashionMNIST', train=False, download=True, transform=transforms.ToTensor())
+mnist_train = torchvision.datasets.FashionMNIST(root='../FashionMNIST', train=True, download=True, transform=transforms.ToTensor())
+mnist_test = torchvision.datasets.FashionMNIST(root='../FashionMNIST', train=False, download=True, transform=transforms.ToTensor())
 #上面的mnist_train和mnist_test都是torch.utils.data.Dataset的子类，所以我们可以用len()来获取该数据集的大小，还可以用下标来获取具体的一个样本。
 # print(type(mnist_train))
 # print(len(mnist_train), len(mnist_test))
